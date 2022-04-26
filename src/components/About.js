@@ -1,9 +1,11 @@
 import "../styles/about.scss";
+import { useTheme } from "../hooks/useTheme";
 
 export default function About() {
+  const { color } = useTheme();
   return (
     <main className="about">
-      <h2 className="about-title">
+      <h2 className="about-title" style={{ color: color }}>
         Father learns that his daughter can predict the future. What happens
         next is shocking!
       </h2>
@@ -33,7 +35,8 @@ export default function About() {
         work so late. What's the matter?" He said, "I don't want to talk about
         it, I've just spent the worst day of my life." She said, "You think you
         had a bad day, you'll never believe what happened to me. This morning
-        the mailman dropped dead on our porch!"
+        <span style={{ color: color }}> the mailman</span> dropped dead on our
+        porch!"
       </p>
     </main>
   );

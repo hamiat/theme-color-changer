@@ -1,11 +1,17 @@
 .about {
-  padding: 64px;
+  padding: 0 48px ;
 
   .about-title {
-    line-height: 1.7;
+    line-height: 1.9;
+    font-family: Alatsi;
+    font-size: 30px;
   }
 
   .about-p {
-    line-height: 1.5;
+    line-height: 1.7;
+    font-family: inter;
+    font-size: 18px;
+
   }
 }
+

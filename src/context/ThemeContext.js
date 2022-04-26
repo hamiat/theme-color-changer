@@ -19,8 +19,8 @@ const themeReducer = (state, action) => {
 export function ThemeProvider({ children }) {
   //useReducer hook that takes in the themeReducer function (to be used to update the state) and an value initial for state.
   const [state, dispatch] = useReducer(themeReducer, {
-    color: "#c1c1c1",
-    mode: "light"
+    color: "#a1a1a1",
+    mode: "dark"
   });
 
   const changeColor = (color) => {
